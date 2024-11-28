@@ -1,0 +1,88 @@
+:root {
+    --navigation-background-color: rgb(22, 53, 94);
+    --navigation-font-size:20px;
+    --heading1-size: 30px;
+    --heading2-size: 20px;
+    --heading-font: Comic Sans MS, Comic Sans, cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: var(--navigation-background-color);
+    padding: 5px;
+}
+nav a{
+    color: white;
+    display: block;
+    padding: 20px;
+    font-size: var(--navigation-font-size);
+}
+
+h1{
+    color: var(--navigation-background-color);
+    font-size: var(--heading1-size);
+    font-family: var(--heading-font);
+    margin: 1rem;
+}
+
+main h3{
+    font-family: var(--heading-font);
+    font-size: var(--heading2-size);
+    margin: 1rem;
+    clear: both;
+}
+main img{
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 1rem 0 1rem;
+}
+p{
+    font-family:Georgia;
+}
+main p{
+    padding: 1rem 1rem 0; 
+}
+
+main{
+    max-width: 840px;
+}
+aside{
+    width:20rem;
+    text-align: center;
+    position: relative;
+}
+aside h2 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.514);
+    top: 8rem;
+    width: 15rem;
+    left:35px;
+}
+aside img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+footer{
+    margin-top: 1rem;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+/*Class Selectors*/
+.box{
+    margin: 1em;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1.5em;
+    background-color: rgba(197, 229, 248);
+    color: rgb(8, 30, 65);
+    font-size: 16px;
+}
