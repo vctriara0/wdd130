@@ -7,10 +7,38 @@
     --heading-font: "Josefin Sans", serif;
     --text-font: "Montserrat", serif;
 }
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
 
 header nav{
     font-size: 1.2rem;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+header nav a{
+    color: #106fa3;
+
+}
+
+header nav a:hover{
+    color:#083954;
+    background-color:#1070a341;
+    text-decoration: underline;
+
+}
+.logo-box{
+    display: flex;
+    justify-content: center;
+}
+.logo-box img {
+    width:100px;
+    height: auto;
+
 }
 p{
     font-family: var(--text-font);
@@ -19,17 +47,15 @@ p{
 }
 h1,h2,h3{
     font-family: var(--heading-font);
-    color: #106fa3;
+    color:#083954;
     font-size: 2rem;
 }
+
 a{
     text-decoration: none;
     padding: 1rem;
 }
-.sociallinks img{
-    max-width: 2rem;
-    height: auto;
-}
+
 
 .hero {
     position: relative;
@@ -71,4 +97,73 @@ a{
     bottom: 20px; 
     width: 150px; 
     height: auto;
+}
+section{
+padding: 1rem 0 1rem 0;
+margin: 1rem;
+background-color: #c4d6b0;
+}
+
+.section{
+    display: grid;
+    justify-content: space-around;
+}
+section h2{
+    text-align: center;
+}
+.history{
+    grid-template-columns: 2fr 1fr 2fr;
+}
+.section img{
+    height: 200px;
+    width:auto;
+}
+.photos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   justify-content: center;
+}
+.photos img {
+    width: 100%; /* Images take up the full width of their grid cell */
+    height: auto; 
+    object-fit:cover;
+}
+figure{
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 300px;
+    margin: auto;
+}
+figcaption {
+    font-family: var(--text-font);
+    font-size: smaller;
+    text-align: center;
+    font-style: italic;
+    padding: 3px;
+}
+footer p{
+    text-align: center;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+.sociallinks{
+    display: flex;
+    justify-content: flex-end;
+    color: #106fa3;
+}
+.sociallinks a:hover{
+    text-decoration: underline;
+}
+.sociallinks img{
+    max-width: 2rem;
+    height: auto;
+}
+footer nav a{
+    color: #106fa3;
+    text-align: center;
+    padding: 4px;
+    margin: 1rem;
 }
